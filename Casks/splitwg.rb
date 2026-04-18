@@ -17,12 +17,12 @@ cask "splitwg" do
 
   app "SplitWG.app"
 
-  uninstall quit: "com.local.splitwg"
+  uninstall quit: "com.kilimcininkoroglu.splitwg"
 
   zap trash: [
     "~/.config/splitwg",
     "~/Library/Caches/SplitWG",
-    "~/Library/Preferences/com.local.splitwg.plist",
-    "~/Library/Saved Application State/com.local.splitwg.savedState",
+    "~/Library/Preferences/com.kilimcininkoroglu.splitwg.plist",
+    "~/Library/Saved Application State/com.kilimcininkoroglu.splitwg.savedState",
   ]
 end
