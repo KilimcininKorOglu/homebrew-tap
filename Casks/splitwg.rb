@@ -17,6 +17,18 @@ cask "splitwg" do
 
   app "SplitWG.app"
 
+  # Strip the quarantine xattr on install so Gatekeeper's CloudKit
+  # lookup path is bypassed on first launch. The app is Developer-ID
+  # signed, hardened-runtime, and notarized with a stapled ticket
+  # (verified offline via `codesign -dvvv` → "Notarization
+  # Ticket=stapled"); without quarantine, macOS trusts the stapled
+  # ticket and does not reach out to Apple's allow-list.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/SplitWG.app"],
+                   sudo: false
+  end
+
   uninstall quit: "com.kilimcininkoroglu.splitwg"
 
   zap trash: [
