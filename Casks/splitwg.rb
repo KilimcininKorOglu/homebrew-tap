@@ -1,6 +1,6 @@
 cask "splitwg" do
-  version "1.0.3"
-  sha256 "d54f8a685d0e03ae593d3d1793f1e70b932a40faf04e6cc8f74a82eca5438d91"
+  version "1.0.4"
+  sha256 "ef406cbc6ae610924da060db5f8902f7aca83d7c7d04bde77095ce89cd3ad9f7"
 
   url "https://github.com/KilimcininKorOglu/SplitWG/releases/download/v#{version}/SplitWG.dmg",
       verified: "github.com/KilimcininKorOglu/SplitWG/"
