@@ -1,7 +1,13 @@
 # homebrew-tap
 
-Homebrew tap for [SplitWG](https://github.com/KilimcininKorOglu/SplitWG)
-— a minimal macOS WireGuard tray app with per-config split tunneling.
+Homebrew tap for the macOS apps of KilimcininKorOglu.
+
+| Cask | App | Install |
+|---|---|---|
+| `splitwg` | [SplitWG](https://github.com/KilimcininKorOglu/SplitWG): a minimal WireGuard tray app with per-config split tunneling | `brew install --cask KilimcininKorOglu/tap/splitwg` |
+| `revzen` | [Revzen](https://github.com/KilimcininKorOglu/Revzen): Windows-style taskbar behavior for the Dock (macOS 15 or newer) | `brew install --cask KilimcininKorOglu/tap/revzen` |
+
+The sections below use SplitWG as the example. The same commands work for `revzen`.
 
 ## Install
 
