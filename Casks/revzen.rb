@@ -1,6 +1,6 @@
 cask "revzen" do
-  version "1.1.0"
-  sha256 "86742863cc868d4695a4236e6b9047af0e51196490e3c7680aa66bdb9728f342"
+  version "1.2.0"
+  sha256 "c433d75f4b39b832fa64778fb1cbe1a29267bbfca87a15d928b24303b6f6bfb2"
 
   url "https://github.com/KilimcininKorOglu/Revzen/releases/download/v#{version}/Revzen.dmg",
       verified: "github.com/KilimcininKorOglu/Revzen/"
